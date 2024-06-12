@@ -84,8 +84,8 @@ public class ApiService {
         if (response.statusCode() == 200) {
             //metodo para realizar cobro
             String pagar = BASE_URL + "/realizar_cargo";
-            String monto = "5";
-            String descripcion = "Cobro prueba";
+            String monto = "18";
+            String descripcion = "Cobro gitfcard creada con exito";
             String requestPagar = String.format("{\"numero_tarjeta\":\"%s\",\"monto\":\"%s\",\"descripcion\":\"%s\",\"mes_vencimiento\":\"%s\",\"anio_vencimiento\":\"%s\",\"codigo_seguridad\":\"%s\"}",
                     numeroTarjeta, monto, descripcion, mesVencimiento, anioVencimiento, codigoSeguridad);
             HttpRequest pagarTest = HttpRequest.newBuilder()
