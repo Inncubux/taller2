@@ -27,8 +27,16 @@ public class UsuarioService {
         Usuarios.add(nuevoUsuario);
         return true;
     }
-
+    public  boolean getUsuario(String email, String contrasena){
+        for(Usuario usuario : Usuarios){
+            if(usuario.getEmail().equals(email) && usuario.getContrasena().equals(contrasena)){
+                return true;
+            }
+        }
+        return false;
+    }
     public LinkedList<Usuario> getUsuarios() {
         return Usuarios;
     }
+
 }

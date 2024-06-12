@@ -16,6 +16,8 @@ public class Usuario {
 
     public String getEmail(){return this.email;}
 
+    public String getContrasena(){return this.contrasena;}
+
     public String toString() {
         return String.format("%-20s %-20s %s/%s %s",
                 nombre,
