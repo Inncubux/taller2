@@ -14,31 +14,31 @@
          <effect>
             <Blend />
          </effect></Label>
-      <TextField layoutX="75.0" layoutY="99.0" prefHeight="42.0" prefWidth="211.0" promptText="Nombre">
+      <TextField fx:id="txtNombre" layoutX="75.0" layoutY="99.0" prefHeight="42.0" prefWidth="211.0" promptText="Nombre">
          <font>
             <Font size="16.0" />
          </font></TextField>
-      <TextField layoutX="306.0" layoutY="99.0" prefHeight="42.0" prefWidth="211.0" promptText="Apelllido">
+      <TextField fx:id="txtApellido" layoutX="306.0" layoutY="99.0" prefHeight="42.0" prefWidth="211.0" promptText="Apelllido">
          <font>
             <Font size="16.0" />
          </font>
       </TextField>
-      <TextField layoutX="75.0" layoutY="165.0" prefHeight="42.0" prefWidth="441.0" promptText="Correo Electrónico">
+      <TextField fx:id="txtEmail" layoutX="75.0" layoutY="165.0" prefHeight="42.0" prefWidth="441.0" promptText="Correo Electrónico">
          <font>
             <Font size="16.0" />
          </font>
       </TextField>
-      <PasswordField layoutX="75.0" layoutY="238.0" prefHeight="42.0" prefWidth="211.0" promptText="Contraseña">
+      <PasswordField fx:id="txtContrasena" layoutX="75.0" layoutY="238.0" prefHeight="42.0" prefWidth="211.0" promptText="Contraseña">
          <font>
             <Font size="16.0" />
          </font>
       </PasswordField>
-      <Button layoutX="244.0" layoutY="324.0" mnemonicParsing="false" style="-fx-background-color: A9D8E4; -fx-border-radius: 5;" text="Registrar">
+      <Button fx:id="btnRegistrar" layoutX="244.0" layoutY="324.0" mnemonicParsing="false" onAction="#handleRegistrar" style="-fx-background-color: A9D8E4; -fx-border-radius: 5;" text="Registrar">
          <font>
             <Font name="System Bold" size="16.0" />
          </font>
       </Button>
-      <PasswordField layoutX="306.0" layoutY="238.0" prefHeight="42.0" prefWidth="211.0" promptText="Reingresar Contraseña">
+      <PasswordField fx:id="txtContrasena2" layoutX="306.0" layoutY="238.0" prefHeight="42.0" prefWidth="211.0" promptText="Reingresar Contraseña">
          <font>
             <Font size="16.0" />
          </font>

@@ -6,6 +6,7 @@ import cl.ingenieriasoftware.demo_t2.entities.CreditCard;
 import cl.ingenieriasoftware.demo_t2.entities.Usuario;
 import cl.ingenieriasoftware.demo_t2.services.ApiService;
 import cl.ingenieriasoftware.demo_t2.services.CreditCardService;
+import cl.ingenieriasoftware.demo_t2.services.UsuarioService;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
@@ -31,9 +32,9 @@ public class RegistarUsuarioController {
     private TextField txtContrasena;
     @FXML
     private TextField txtContrasena2;
-    private List<Usuario> ListUsuario;
+    private ObservableList<Usuario> UsuarioList;
     @FXML
-    private void handle(ActionEvent event) {
+    private void handleRegistrar(ActionEvent event) throws IOException {
         String nombre = txtNombre.getText();
         String apellido = txtApellido.getText();
         String email = txtEmail.getText();
@@ -47,16 +48,21 @@ public class RegistarUsuarioController {
             AlertMessage.show(Alert.AlertType.ERROR, "ERROR", "ambas contraseñas deben ser iguales");
             return;
         }
-        try {
-            for (int i = 0; i < ListUsuario.size(); i++) {
-                if (email.equals(ListUsuario.get(i).getEmail())) {
-                    AlertMessage.show(Alert.AlertType.ERROR, "ERROR", "este correo ya esta asociado a una cuenta existente");
-                    return;
-                }
-            }
-            ListUsuario.add(new Usuario(nombre,apellido,email,contrasena));
-        } catch (Exception e) {
-            throw new RuntimeException(e);
+        if(!UsuarioService.getInstance().addUsuario(nombre, apellido, email, contrasena)){
+            AlertMessage.show(Alert.AlertType.ERROR, "ERROR", "este correo ya esta asociado a otra cuenta");
         }
+        FXMLLoader loader = new FXMLLoader(DemoApplication.class.getResource("iniciar-sesion-view.fxml"));
+        Parent root = loader.load();
+
+        Stage stage = new Stage();
+        stage.setScene(new Scene(root));
+        stage.setTitle("Iniciar sesion"); //Ítalo: título de la ventana
+        stage.show();
+
+        //Ítalo: cerramos la ventana actual (la del inicio de sesión)
+        ((Node)(event.getSource())).getScene().getWindow().hide();
+
+        ((Node)(event.getSource())).getScene().getWindow().hide();
+
     }
 }
