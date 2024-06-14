@@ -41,12 +41,12 @@ public class IniciarSesionController {
             AlertMessage.show(Alert.AlertType.ERROR, "ERROR", "correo o contraseña incorrecto");
             return;
         }
-        FXMLLoader loader = new FXMLLoader(DemoApplication.class.getResource("iniciar-sesion-view.fxml"));
+        FXMLLoader loader = new FXMLLoader(DemoApplication.class.getResource("comprar-giftcard-view.fxml"));
         Parent root = loader.load();
 
         Stage stage = new Stage();
         stage.setScene(new Scene(root));
-        stage.setTitle("Iniciar sesion");
+        stage.setTitle("pagar giftcard");
         stage.show();
 
         ((Node)(event.getSource())).getScene().getWindow().hide();

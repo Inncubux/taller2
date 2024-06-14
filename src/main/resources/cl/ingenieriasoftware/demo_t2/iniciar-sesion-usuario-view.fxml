@@ -7,7 +7,7 @@
 
 <AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: C9E8B8;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cl.ingenieriasoftware.demo_t2.controllers.IniciarSesionController">
    <children>
-      <Label layoutX="196.0" layoutY="45.0" prefHeight="50.0" prefWidth="211.0" text="Iniciar Sesión" textFill="#333333">
+      <Label layoutX="196.0" layoutY="51.0" prefHeight="50.0" prefWidth="211.0" text="Iniciar Sesión" textFill="#333333">
          <font>
             <Font name="System Bold" size="33.0" />
          </font>

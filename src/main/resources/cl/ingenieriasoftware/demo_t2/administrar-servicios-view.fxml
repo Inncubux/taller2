@@ -44,10 +44,5 @@
             <Font size="16.0" />
          </font>
       </Label>
-      <Button layoutX="40.0" layoutY="29.0" mnemonicParsing="false" style="-fx-background-radius: 100; -fx-background-color: F7C3B6;" text="Volver">
-         <font>
-            <Font name="System Bold" size="15.0" />
-         </font>
-      </Button>
    </children>
 </AnchorPane>

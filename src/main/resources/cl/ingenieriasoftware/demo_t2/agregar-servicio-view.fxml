@@ -2,33 +2,10 @@
 
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
-<?import javafx.scene.text.*?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: C9E8B8;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cl.ingenieriasoftware.demo_t2.AgregarServicioView">
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cl.ingenieriasoftware.demo_t2.AgregarServicioView">
    <children>
-      <Label layoutX="171.0" layoutY="45.0" text="Agregar Servicio" textFill="#333333">
-         <font>
-            <Font name="System Bold" size="33.0" />
-         </font></Label>
-      <TextField layoutX="74.0" layoutY="144.0" prefHeight="26.0" prefWidth="450.0" promptText="Nombre servicio" style="-fx-background-radius: 9;">
-         <font>
-            <Font size="16.0" />
-         </font>
-      </TextField>
-      <TextField layoutX="74.0" layoutY="232.0" prefHeight="37.0" prefWidth="450.0" promptText="Precio" style="-fx-background-radius: 9;">
-         <font>
-            <Font size="16.0" />
-         </font>
-      </TextField>
-      <Button layoutX="387.0" layoutY="318.0" mnemonicParsing="false" style="-fx-background-color: A9D8E4;" text="Agregar" textFill="#333333">
-         <font>
-            <Font name="System Bold" size="16.0" />
-         </font>
-      </Button>
-      <Button layoutX="40.0" layoutY="29.0" mnemonicParsing="false" style="-fx-background-radius: 100; -fx-background-color: F7C3B6;" text="Volver">
-         <font>
-            <Font name="System Bold" size="15.0" />
-         </font>
-      </Button>
+      <Label layoutX="203.0" layoutY="66.0" text="Agregar Servicio" />
    </children>
 </AnchorPane>

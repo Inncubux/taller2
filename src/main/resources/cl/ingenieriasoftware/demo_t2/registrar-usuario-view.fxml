@@ -7,7 +7,7 @@
 
 <AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: C9E8B8;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cl.ingenieriasoftware.demo_t2.controllers.RegistarUsuarioController">
    <children>
-      <Label layoutX="161.0" layoutY="45.0" text="Registrar Usuario" textFill="#333333">
+      <Label layoutX="161.0" layoutY="32.0" text="Registrar Usuario" textFill="#333333">
          <font>
             <Font name="System Bold" size="33.0" />
          </font>
@@ -23,12 +23,12 @@
             <Font size="16.0" />
          </font>
       </TextField>
-      <TextField fx:id="txtEmail" layoutX="74.0" layoutY="200.0" prefHeight="42.0" prefWidth="441.0" promptText="Correo Electrónico" style="-fx-background-radius: 9;">
+      <TextField fx:id="txtEmail" layoutX="75.0" layoutY="165.0" prefHeight="42.0" prefWidth="441.0" promptText="Correo Electrónico" style="-fx-background-radius: 9;">
          <font>
             <Font size="16.0" />
          </font>
       </TextField>
-      <PasswordField fx:id="txtContrasena" layoutX="75.0" layoutY="259.0" prefHeight="42.0" prefWidth="211.0" promptText="Contraseña" style="-fx-background-radius: 9;">
+      <PasswordField fx:id="txtContrasena" layoutX="75.0" layoutY="238.0" prefHeight="42.0" prefWidth="211.0" promptText="Contraseña" style="-fx-background-radius: 9;">
          <font>
             <Font size="16.0" />
          </font>
@@ -38,24 +38,10 @@
             <Font name="System Bold" size="16.0" />
          </font>
       </Button>
-      <PasswordField fx:id="txtContrasena2" layoutX="306.0" layoutY="259.0" prefHeight="42.0" prefWidth="211.0" promptText="Reingresar Contraseña" style="-fx-background-radius: 9;">
+      <PasswordField fx:id="txtContrasena2" layoutX="306.0" layoutY="238.0" prefHeight="42.0" prefWidth="211.0" promptText="Reingresar Contraseña" style="-fx-background-radius: 9;">
          <font>
             <Font size="16.0" />
          </font>
       </PasswordField>
-      <Button layoutX="40.0" layoutY="29.0" mnemonicParsing="false" style="-fx-background-radius: 100; -fx-background-color: F7C3B6;" text="Volver">
-         <font>
-            <Font name="System Bold" size="15.0" />
-         </font>
-      </Button>
-      <MenuButton layoutX="75.0" layoutY="151.0" mnemonicParsing="false" text="Edad" textFill="#333333">
-        <items>
-          <MenuItem mnemonicParsing="false" text="Action 1" />
-          <MenuItem mnemonicParsing="false" text="Action 2" />
-        </items>
-         <font>
-            <Font size="16.0" />
-         </font>
-      </MenuButton>
    </children>
 </AnchorPane>

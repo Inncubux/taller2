@@ -4,32 +4,43 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: C9E8B8;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cl.ingenieriasoftware.demo_t2.ComprarGiftcardView">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: C9E8B8;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cl.ingenieriasoftware.demo_t2.controllers.ComprarGiftcardController">
    <children>
-      <Label layoutX="165.0" layoutY="45.0" text="Comprar Giftcard" textFill="#333333">
+      <Label layoutX="165.0" layoutY="36.0" text="Comprar Giftcard" textFill="#333333">
          <font>
             <Font name="System Bold" size="33.0" />
          </font>
       </Label>
-      <Button layoutX="238.0" layoutY="315.0" mnemonicParsing="false" style="-fx-background-color: A9D8E4; -fx-border-radius: 5;" text="Realizar Pago" textFill="#333333">
+      <TextField fx:id="textNumTarjeta" layoutX="77.0" layoutY="137.0" prefHeight="34.0" prefWidth="446.0" promptText="Número de la tarjeta" style="-fx-background-radius: 9;">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="textFechaExp" layoutX="77.0" layoutY="210.0" prefHeight="38.0" prefWidth="95.0" promptText="MM/AA" style="-fx-background-radius: 9;">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </TextField>
+      <PasswordField fx:id="textCode" layoutX="341.0" layoutY="211.0" prefHeight="37.0" prefWidth="68.0" promptText="CVC" style="-fx-background-radius: 9;">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </PasswordField>
+      <Button fx:id="btnPagar" layoutX="218.0" layoutY="313.0" mnemonicParsing="false" onAction="#handlePagar" style="-fx-background-color: A9D8E4; -fx-border-radius: 5;" text="Realizar Pago" textFill="#333333">
          <font>
             <Font name="System Bold" size="16.0" />
          </font></Button>
-      <Button layoutX="40.0" layoutY="29.0" mnemonicParsing="false" style="-fx-background-radius: 100; -fx-background-color: F7C3B6;" text="Volver">
+      <Label layoutX="341.0" layoutY="183.0" text="Codigo de seguridad">
          <font>
-            <Font name="System Bold" size="15.0" />
+            <Font size="14.0" />
          </font>
-      </Button>
-      <TableView editable="true" layoutX="88.0" layoutY="130.0" prefHeight="139.0" prefWidth="423.0">
-        <columns>
-          <TableColumn prefWidth="102.19999694824219" text="C1" />
-          <TableColumn prefWidth="96.20001220703125" text="C2" />
-        </columns>
-         <columnResizePolicy>
-            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
-         </columnResizePolicy>
-      </TableView>
-      <Label layoutX="93.0" layoutY="102.0" text="Seleccione los servicios que desea suscribirse">
+      </Label>
+      <Label layoutX="77.0" layoutY="183.0" text="Fecha de expiración">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="77.0" layoutY="111.0" text="Ingrese sus datos en los siguientes campos">
          <font>
             <Font size="14.0" />
          </font>
