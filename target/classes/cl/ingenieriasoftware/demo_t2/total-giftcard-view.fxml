@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: C9E8B8;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cl.ingenieriasoftware.demo_t2.ComprarGiftcardView">
+   <children>
+      <Label layoutX="165.0" layoutY="45.0" text="Comprar Giftcard" textFill="#333333">
+         <font>
+            <Font name="System Bold" size="33.0" />
+         </font>
+      </Label>
+      <Button layoutX="383.0" layoutY="315.0" mnemonicParsing="false" style="-fx-background-color: A9D8E4; -fx-border-radius: 5;" text="Crédito" textFill="#333333">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font></Button>
+      <Button layoutX="40.0" layoutY="29.0" mnemonicParsing="false" style="-fx-background-radius: 100; -fx-background-color: F7C3B6;" text="Volver">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <Label layoutX="93.0" layoutY="102.0" prefHeight="122.0" prefWidth="94.0" text="Seleccione los servicios que desea suscribirse" wrapText="true">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="421.0" layoutY="102.0" prefHeight="112.0" prefWidth="94.0" text="Costo" />
+      <Button layoutX="113.0" layoutY="315.0" mnemonicParsing="false" style="-fx-background-color: A9D8E4; -fx-border-radius: 5;" text="Puntos">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Button>
+      <Label layoutX="91.0" layoutY="247.0" text="Puntos">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: C9E8B8;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cl.ingenieriasoftware.demo_t2.ComprarGiftcardView">
+   <children>
+      <Label layoutX="165.0" layoutY="45.0" text="Comprar Giftcard" textFill="#333333">
+         <font>
+            <Font name="System Bold" size="33.0" />
+         </font>
+      </Label>
+      <Button layoutX="256.0" layoutY="313.0" mnemonicParsing="false" style="-fx-background-color: A9D8E4; -fx-border-radius: 5;" text="Ver total" textFill="#333333">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font></Button>
+      <Button layoutX="40.0" layoutY="29.0" mnemonicParsing="false" style="-fx-background-radius: 100; -fx-background-color: F7C3B6;" text="Volver">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <TableView editable="true" fixedCellSize="1.0" layoutX="88.0" layoutY="130.0" prefHeight="139.0" prefWidth="423.0">
+        <columns>
+          <TableColumn prefWidth="137.59999084472656" text="Servicio" />
+          <TableColumn prefWidth="227.19998168945312" text="Precio" />
+            <TableColumn prefWidth="57.60002441406249" text="Column X" />
+        </columns>
+      </TableView>
+      <Label layoutX="93.0" layoutY="102.0" text="Seleccione los servicios que desea suscribirse">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
