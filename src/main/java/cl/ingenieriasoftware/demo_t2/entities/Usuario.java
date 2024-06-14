@@ -18,6 +18,10 @@ public class Usuario {
 
     public String getContrasena(){return this.contrasena;}
 
+    public int getAdmin() {
+        return Admin;
+    }
+
     public String toString() {
         return String.format("%-20s %-20s %s/%s %s",
                 nombre,

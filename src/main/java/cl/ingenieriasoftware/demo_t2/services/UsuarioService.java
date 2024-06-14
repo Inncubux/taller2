@@ -35,6 +35,14 @@ public class UsuarioService {
         }
         return false;
     }
+    public Usuario getUsuarioC(String email){
+        for (Usuario usuario : Usuarios){
+            if (usuario.getEmail().equals(email)){
+                return usuario;
+            }
+        }
+        return null;
+    }
     public LinkedList<Usuario> getUsuarios() {
         return Usuarios;
     }

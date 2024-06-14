@@ -5,7 +5,7 @@ import cl.ingenieriasoftware.demo_t2.Util.AlertMessage;
 import cl.ingenieriasoftware.demo_t2.entities.CreditCard;
 import cl.ingenieriasoftware.demo_t2.entities.Usuario;
 import cl.ingenieriasoftware.demo_t2.services.ApiService;
-import cl.ingenieriasoftware.demo_t2.services.CreditCardService;
+import cl.ingenieriasoftware.demo_t2.services.EscribirArchivoTexto;
 import cl.ingenieriasoftware.demo_t2.services.UsuarioService;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
@@ -51,6 +51,7 @@ public class RegistarUsuarioController {
         if(!UsuarioService.getInstance().addUsuario(nombre, apellido, email, contrasena)){
             AlertMessage.show(Alert.AlertType.ERROR, "ERROR", "este correo ya esta asociado a otra cuenta");
         }
+        EscribirArchivoTexto.main(nombre,apellido,email,contrasena);
         FXMLLoader loader = new FXMLLoader(DemoApplication.class.getResource("iniciar-sesion-usuario-view.fxml"));
         Parent root = loader.load();
 

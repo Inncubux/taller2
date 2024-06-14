@@ -7,6 +7,7 @@ import cl.ingenieriasoftware.demo_t2.entities.Usuario;
 import cl.ingenieriasoftware.demo_t2.services.ApiService;
 import cl.ingenieriasoftware.demo_t2.services.CreditCardService;
 import cl.ingenieriasoftware.demo_t2.services.UsuarioService;
+import cl.ingenieriasoftware.demo_t2.services.leerArchivoRegistros;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
@@ -29,6 +30,7 @@ public class IniciarSesionController {
     private ObservableList<Usuario> UsuarioList;
     @FXML
     private void handleIngresar(ActionEvent event) throws IOException {
+        leerArchivoRegistros.main();
         String email = txtEmail.getText();
         String contrasena = txtContrasena.getText();
         if(email.isEmpty() || contrasena.isEmpty()){
