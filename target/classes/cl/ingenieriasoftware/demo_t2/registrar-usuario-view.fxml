@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: C9E8B8;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cl.ingenieriasoftware.demo_t2.controllers.RegistarUsuarioController">
+   <children>
+      <Label layoutX="161.0" layoutY="32.0" text="Registrar Usuario" textFill="#333333">
+         <font>
+            <Font name="System Bold" size="33.0" />
+         </font>
+         <effect>
+            <Blend />
+         </effect></Label>
+      <TextField fx:id="txtNombre" layoutX="75.0" layoutY="99.0" prefHeight="42.0" prefWidth="211.0" promptText="Nombre" style="-fx-background-radius: 9;">
+         <font>
+            <Font size="16.0" />
+         </font></TextField>
+      <TextField fx:id="txtApellido" layoutX="306.0" layoutY="99.0" prefHeight="42.0" prefWidth="211.0" promptText="Apelllido" style="-fx-background-radius: 9;">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtEmail" layoutX="75.0" layoutY="165.0" prefHeight="42.0" prefWidth="441.0" promptText="Correo Electrónico" style="-fx-background-radius: 9;">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </TextField>
+      <PasswordField fx:id="txtContrasena" layoutX="75.0" layoutY="238.0" prefHeight="42.0" prefWidth="211.0" promptText="Contraseña" style="-fx-background-radius: 9;">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </PasswordField>
+      <Button fx:id="btnRegistrar" layoutX="244.0" layoutY="324.0" mnemonicParsing="false" onAction="#handleRegistrar" style="-fx-background-color: A9D8E4; -fx-border-radius: 5;" text="Registrar">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Button>
+      <PasswordField fx:id="txtContrasena2" layoutX="306.0" layoutY="238.0" prefHeight="42.0" prefWidth="211.0" promptText="Reingresar Contraseña" style="-fx-background-radius: 9;">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </PasswordField>
+   </children>
+</AnchorPane>

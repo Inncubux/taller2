@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: C9E8B8;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cl.ingenieriasoftware.demo_t2.controllers.IniciarSesionController">
+   <children>
+      <Label layoutX="196.0" layoutY="51.0" prefHeight="50.0" prefWidth="211.0" text="Iniciar Sesión" textFill="#333333">
+         <font>
+            <Font name="System Bold" size="33.0" />
+         </font>
+         <effect>
+            <Blend />
+         </effect>
+      </Label>
+      <PasswordField fx:id="txtContrasena" layoutX="159.0" layoutY="209.0" prefHeight="42.0" prefWidth="286.0" promptText="Contraseña" style="-fx-background-radius: 9;">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </PasswordField>
+      <TextField fx:id="txtEmail" layoutX="161.0" layoutY="132.0" prefHeight="42.0" prefWidth="285.0" promptText="Correo Electrónico" style="-fx-background-radius: 9;">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </TextField>
+      <Button fx:id="btnIngresar" layoutX="258.0" layoutY="282.0" mnemonicParsing="false" onAction="#handleIngresar" style="-fx-background-color: A9D8E4; -fx-border-radius: 5;" text="Ingresar">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Button>
+      <Label layoutX="194.0" layoutY="349.0" prefHeight="26.0" prefWidth="127.0" text="No tengo cuenta." textFill="#333333">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Hyperlink layoutX="304.0" layoutY="349.0" text="Registrarme">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Hyperlink>
+   </children>
+</AnchorPane>

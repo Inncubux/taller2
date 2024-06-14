@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: C9E8B8;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cl.ingenieriasoftware.demo_t2.AdministrarServiciosView">
+   <children>
+      <Label layoutX="135.0" layoutY="40.0" text="Administrar Servicios" textFill="#333333">
+         <font>
+            <Font name="System Bold" size="33.0" />
+         </font></Label>
+      <MenuButton layoutX="104.0" layoutY="149.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="392.0" style="-fx-background-radius: 9;" text="Seleccionar Servicio">
+        <items>
+          <MenuItem mnemonicParsing="false" text="Action 1" />
+          <MenuItem mnemonicParsing="false" text="Action 2" />
+        </items>
+         <font>
+            <Font size="18.0" />
+         </font>
+      </MenuButton>
+      <Button layoutX="413.0" layoutY="290.0" mnemonicParsing="false" style="-fx-background-color: A9D8E4; -fx-border-radius: 5;" text="Agregar" textFill="#333333">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Button>
+      <Button layoutX="104.0" layoutY="212.0" mnemonicParsing="false" style="-fx-background-color: A9D8E4; -fx-border-radius: 5;" text="Modificar" textFill="#333333">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Button>
+      <Button layoutX="413.0" layoutY="212.0" mnemonicParsing="false" style="-fx-background-color: F7C3B6; -fx-border-radius: 5;" text="Eliminar" textFill="#333333">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Button>
+      <Label layoutX="111.0" layoutY="120.0" text="Seleccione el servicio que desea modificar o eliminar">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="111.0" layoutY="276.0" prefHeight="64.0" prefWidth="285.0" text="Si desea agregar un servicio haga click en el botón de la derecha" wrapText="true">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
