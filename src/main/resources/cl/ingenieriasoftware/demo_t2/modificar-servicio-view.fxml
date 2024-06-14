@@ -6,7 +6,7 @@
 
 <AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: C9E8B8;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cl.ingenieriasoftware.demo_t2.AgregarServicioView">
    <children>
-      <Label layoutX="171.0" layoutY="45.0" text="Agregar Servicio" textFill="#333333">
+      <Label layoutX="159.0" layoutY="45.0" text="Modificar Servicio" textFill="#333333">
          <font>
             <Font name="System Bold" size="33.0" />
          </font></Label>
@@ -20,7 +20,7 @@
             <Font size="16.0" />
          </font>
       </TextField>
-      <Button layoutX="387.0" layoutY="318.0" mnemonicParsing="false" style="-fx-background-color: A9D8E4;" text="Agregar" textFill="#333333">
+      <Button layoutX="259.0" layoutY="316.0" mnemonicParsing="false" style="-fx-background-color: A9D8E4;" text="Agregar" textFill="#333333">
          <font>
             <Font name="System Bold" size="16.0" />
          </font>
